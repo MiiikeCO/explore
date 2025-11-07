@@ -1,0 +1,5 @@
+{
+  "name": "Geo Explorer",
+  "description": "A web-based game similar to GeoGuesser. Players are placed in a random Google Street View location and must guess where they are in the world on a map. The game then reveals the actual location and scores the player based on the distance of their guess.",
+  "requestFramePermissions": []
+}
