@@ -5,23 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geo Explorer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Add Babel to transpile JSX/TSX in the browser -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>
-      /* Hide the default Google Maps UI elements we don't need */
-      .gm-control-active, .gmnoprint {
-        display: none !important;
-      }
-      .gm-fullscreen-control, .gm-svpc {
-        display: none !important;
-      }
-    </style>
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.2"
   }
 }
 </script>
@@ -29,15 +20,7 @@
 </head>
   <body>
     <div id="root"></div>
-    
-    <!-- 
-      The Google Maps script is no longer loaded here.
-      It is now loaded dynamically within the App.tsx component.
-      This ensures the API key is handled securely via environment variables
-      and prevents race conditions where the app might try to use the API
-      before it has fully loaded.
-    -->
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+    <script type="module" src="/src/index.tsx"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+/* Hide the default Google Maps UI elements we don't need */
+.gm-control-active, .gmnoprint {
+  display: none !important;
+}
+.gm-fullscreen-control, .gm-svpc {
+  display: none !important;
+}
