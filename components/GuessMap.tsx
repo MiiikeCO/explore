@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { GameState, LatLngLiteral } from '../types';
+import { GameState, LatLngLiteral } from '../types.ts';
 
 interface GuessMapProps {
   onGuess: (location: LatLngLiteral) => void;

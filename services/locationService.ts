@@ -1,5 +1,5 @@
 
-import { LatLngLiteral } from '../types';
+import { LatLngLiteral } from '../types.ts';
 
 // Broad boundaries covering most populated land areas
 const BOUNDARIES = {

@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { GameState, LatLngLiteral } from './types';
-import { findRandomStreetViewLocation } from './services/locationService';
-import StreetView from './components/StreetView';
-import GuessMap from './components/GuessMap';
-import UIOverlay from './components/UIOverlay';
+import { GameState, LatLngLiteral } from './types.ts';
+import { findRandomStreetViewLocation } from './services/locationService.ts';
+import StreetView from './components/StreetView.tsx';
+import GuessMap from './components/GuessMap.tsx';
+import UIOverlay from './components/UIOverlay.tsx';
 
 const API_KEY_STORAGE_KEY = 'googleMapsApiKey';
 

@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { LatLngLiteral } from '../types';
+import { LatLngLiteral } from '../types.ts';
 
 interface StreetViewProps {
   location: LatLngLiteral;
